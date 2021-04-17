@@ -12,3 +12,279 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+html, body, div, span, applet, object, iframe, p, blockquote, pre, h2
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+
+header{
+    background-color:rgb(37, 37, 37);
+    min-width: 100%;
+    height: 10vh;   
+    margin:0 auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.inner-header{
+    width: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    margin-left: 50px;
+    /* background-color: hotpink; */
+    color:rgb(42, 171, 226);
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    width: 30%;
+    justify-content: flex-end;
+    margin-right: 50px;
+ }
+
+ ul {
+     width: 1px;
+    list-style: none;
+ }
+
+ nav  ul {
+     width: 100%;
+     display: flex;
+     justify-content: space-around; 
+     margin-left: 45px;
+    }
+    
+    li {
+        position: relative;
+        left: -30px;
+        color:rgb(255, 255, 255) ;
+        font-family: 'Nunito', sans-serif;
+        margin: 2px;
+    }
+    
+    aside{
+        height: 1000px;
+        margin-left: 80vw;
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .profile-box {
+    background-color:white;
+    width: 240px;
+    height: 270px;
+    /* margin-left: 80vw; */
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    border-radius: 5%;
+    box-shadow: 0px 0px 80px -30px black;
+    margin-top: 130px;
+
+}
+
+.profile-pic{
+    background: url('https://www.pngkey.com/png/full/52-522921_kathrine-vangen-profile-pic-empty-png.png') 50% 50% no-repeat; 
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.your-name{
+    width: 200px;
+    /* background-color: red; */
+    display: flex;
+    margin-bottom: 23px;
+    
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px auto;
+}
+
+.pop-articles {
+    background-color:white;
+    width: 246px;
+    height: 340px;
+    margin-top: 30vh;
+    /* margin-left: 80vw; */
+    margin-top: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position:absolute;
+    border-radius: 5%;
+    box-shadow: 0px 0px 80px -30px black;
+}
+
+article{
+/* background-color: red; */
+width:60%;
+height:400px ;
+margin-left: 98px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+position:absolute;
+margin-top: 40px;
+
+}
+
+li::marker{
+    color: black;   
+    
+
+}
+
+li span {
+    color: black;
+    
+}
+
+h3{
+    margin: 0px auto;
+    font-size: 1.1em;
+}
+
+.text-content{
+    width: 70%;
+    height: 775px;
+    margin-left: 130px;
+    margin-top: 130px;
+    /* background-color: royalblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:absolute;
+}
+
+/* .skills-check{
+    background-color:red;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;   
+ } */
+
+p{
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+}
+
+section{
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+	align-items: flex-start;
+    margin-top:0;
+    }   
+ 
+ .image-container{  
+    /* background-color: orchid; */
+    width: 55%;
+    height: 470px;
+    margin-top: -11vh;
+    margin-left: 150px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.gallery-pic{
+    width: 240px;
+    height: 190px;
+    margin: 40px;
+}
+
+.img-gal-text{
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+footer{
+    background-color:rgb(42, 171, 226);
+    width: 100%;
+    height: 55px;
+    margin-top: 444px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+}
+
+h4{
+    margin-left: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+}
+h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+}
+.button-con{
+    width: 40px;
+    height: 40px;
+    border: solid black 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    background-color:rgb(42, 171, 226);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+/* .inner-footer{
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+} */
