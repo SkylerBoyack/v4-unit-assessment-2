@@ -87,11 +87,18 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-products.map(function(product){
- let saleProdcuts = product.price * .75;  
-  return saleProdcuts
+const saleProducts = products.map((element)=>{
+  const newObj = {
+    name: element.name,
+    color: element.color,
+    price: element.price * .75
+  }
+  return newObj
 })
-
+// const saleProducts = products.map((element) =>({
+//   ...element,
+//   price:element.price * .75,
+// })
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -101,7 +108,9 @@ products.map(function(product){
   (Hint: look up the array method 'includes' on MDN)
 */
 
-const blueProducts = products.includes("blue")
+const blueProducts = saleProducts.filter((element)=>{
+  saleProducts.includes("blue")
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -238,7 +247,7 @@ const topic = userInfo.topics[3]
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-const commenterId = userId.comments[3].response[1].response
+const commenterId = userInfo.comments[1].responses[0].userId
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -257,26 +266,28 @@ const commenterId = userId.comments[3].response[1].response
       - create at least 2 kid objects
 */
 
-function person(name,age,jobs,favorites){
-  this.name = name = "kyle"
-  this.age = age = 1
-  this.jobs = jobs = ['Cook','driver','painter']
-  this.birthday = function(){
-    return this.age += 1
-  }
-  this.favorites = favorites={
-    color: "red",
-    number: 10,
-    book: 'HarryPotter',
-    kids: kid=[{
-      name: 'bud',
-      age: 2
+const person= {
+  name: "Sky",
+  age: 28,
+  jobs:['a','b','c'],
+  birthday: function(){
+    this.age += 1
+  },
+  favorites:{
+  color : 'red',
+  number : 5,
+  book : 'a book'
+  },
+  kids:[
+    {
+      name: 'kid1',
+      age :1
     },
-    kid2 ={
-    name: 'dude',
-    age: 2
-    }]
-  }
+    {
+      name: 'kid2',
+      age: 8
+    }
+  ] 
 }
 
 

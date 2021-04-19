@@ -173,11 +173,13 @@ const classes = [
     all online classes with no homework.
 */
 
-function trueOrFalse(){
     for(let i = 0; i < classes.length; i++){
-      if(classes.keys[i] === true){return false }
+        for(let key in classes[i]){
+          if(classes[i][key] === true){
+              classes[i][key] = false 
+          }
+        }
     }
-  }
   
   
 
